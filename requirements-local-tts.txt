@@ -1,0 +1,4 @@
+# Opcional: voz LOCAL (offline) com Kokoro-82M. Instale só se quiser usar o motor "kokoro":
+#   pip install -r requirements-local-tts.txt
+# Depois baixe o modelo:  python scripts/download_voice.py
+kokoro-onnx>=0.4

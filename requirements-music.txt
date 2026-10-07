@@ -1,0 +1,2 @@
+# Opcional: lê título/artista das tags dos MP3/FLAC (sem isso, o APOLO usa o nome do arquivo e das pastas)
+mutagen>=1.47

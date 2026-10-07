@@ -1,0 +1,46 @@
+# Chaves, contas e arquivos locais
+.env
+.env.*
+!.env.example
+accounts/
+profiles/
+*.sqlite
+*.sqlite3
+*.sqlite3-*
+*.db
+*.log
+settings.json
+commands.json
+*token*.json
+credentials*.json
+*.pem
+*.key
+
+# Python e compilação
+.venv/
+.build-venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+build/
+dist/
+
+# Downloads e saídas locais
+*.zip
+*.tar.bz2
+*.part
+*.onnx
+*.bin
+models/wake/keyword/en.phone
+models/wake/keyword/tokens.txt
+assets/sounds/activation/*.wav
+*.mp3
+last_utterance.wav
+validacao/
+.publication/
+.publication-tools/
+.DS_Store
+Thumbs.db

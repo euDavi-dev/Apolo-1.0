@@ -1,0 +1,4 @@
+# Opcional: reconhecimento de fala LOCAL (offline) com faster-whisper. Só instale se for testar o motor "whisper":
+#   pip install -r requirements-local-stt.txt
+# O modelo (ex.: small, ~244 MB) é baixado automaticamente na 1ª vez que for usado (precisa de internet nessa vez).
+faster-whisper>=1.0.0
