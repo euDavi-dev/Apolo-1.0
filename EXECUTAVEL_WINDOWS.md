@@ -4,11 +4,11 @@ O Apolo 1.0 é distribuído como código-fonte. Este repositório não contém u
 
 ## Executar a partir do código
 
-Em Windows x64 com Python 3.11, abra o PowerShell na pasta do projeto:
+Em Windows x64 com Python 3.11, abra o PowerShell na pasta do projeto e use o ambiente `.venv` criado conforme a [instalação no README](README.md#instalação):
 
 ```powershell
-python -m pip install -r requirements.txt
-python run.py
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe run.py
 ```
 
 Na primeira utilização da ativação por voz, o aplicativo baixa do fornecedor os arquivos necessários ao detector contínuo e o modelo de apoio Whisper, quando ainda não estão no computador. Essa etapa precisa de internet. Depois do download, a detecção de “Apolo” funciona localmente. O reconhecimento de pedidos e os demais recursos seguem os requisitos do motor e dos serviços escolhidos nas configurações. Kokoro é opcional e requer seus próprios arquivos de modelo.

@@ -19,9 +19,9 @@ A biblioteca `cryptography` protege o cofre da conta e já consta nas dependênc
 
 O cadastro e o tutorial não abrem microfone nem chamam APIs. Se interromper o guia, a conta continua criada, mas o guia será apresentado novamente após entrar. As alterações dos campos do guia só são salvas ao concluir.
 
-Nas próximas execuções, entre com usuário e senha. Cada novo usuário recebe seu próprio tutorial. **Minha conta** permite editar nome, cidade e chaves, e **Tutorial** reabre o guia. Deixar uma chave vazia e salvar remove aquela chave. A chave Gemini passa a valer no próximo pedido; alterações de música requerem encerrar e abrir o Apolo novamente. Salvar a chave não confirma sua validade: a API é consultada ao inicializar/usar o serviço.
+Nas próximas execuções, entre com usuário e senha. Cada novo usuário recebe seu próprio tutorial. **Minha conta** permite editar nome, cidade e chaves, e **Guia** reabre o tutorial. Deixar uma chave vazia e salvar remove aquela chave. A chave Gemini passa a valer no próximo pedido; alterações de música requerem encerrar e abrir o Apolo novamente. Salvar a chave não confirma sua validade: a API é consultada ao inicializar/usar o serviço.
 
-**Sair da conta** encerra o aplicativo. Abra-o novamente para entrar em outra conta. Fechar pelo X apenas minimiza para a bandeja e mantém a sessão ativa. O início com Windows também exige login.
+**Sair** encerra o aplicativo. Abra-o novamente para entrar em outra conta. Fechar pelo X apenas minimiza para a bandeja e mantém a sessão ativa. O início com Windows também exige login.
 
 ## Dados e privacidade
 
@@ -33,7 +33,7 @@ As contas são locais a este usuário do Windows, sem servidor, e-mail, recupera
 
 Guarde sua senha e faça backup da pasta APOLO. Sem a senha, não é possível recuperar o cofre. O cadastro não importa automaticamente configurações nem chaves antigas; os arquivos anteriores são preservados. Cole suas chaves em Minha conta e ajuste suas preferências pelo aplicativo.
 
-Para autorizar o Spotify, salve o Client ID em Minha conta e execute `python scripts/music_setup.py spotify`. Havendo contas cadastradas, o script pede usuário e senha do Apolo e salva o token na pasta da conta escolhida. Os demais pré-requisitos de música continuam descritos no README.
+Para autorizar o Spotify, salve o Client ID em Minha conta e execute `.\.venv\Scripts\python.exe scripts/music_setup.py spotify`. Havendo contas cadastradas, o script pede usuário e senha do Apolo e salva o token na pasta da conta escolhida. Os demais pré-requisitos de música continuam descritos no README.
 
 ## Validação
 

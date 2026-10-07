@@ -1,7 +1,7 @@
 # Agenda e WhatsApp no Apolo
 
 A barra lateral e o menu da bandeja agora oferecem **Agenda** e **WhatsApp**.
-As novas funções usam as dependências já presentes no projeto. Execute `python run.py`
+As novas funções usam as dependências já presentes no projeto. Execute `.\.venv\Scripts\python.exe run.py`
 na raiz do repositório, usando o ambiente Python da instalação.
 
 ## Tarefas
@@ -76,9 +76,9 @@ abrir o link não confirma que o destinatário está cadastrado.
 Testes locais, sem enviar mensagens ou usar o microfone:
 
 ```powershell
-python -m unittest app.tests.test_productivity app.tests.test_productivity_integration app.tests.test_whatsapp -v
-python -m app.tests.test_flow
-python -m app.tests.test_commands
+.\.venv\Scripts\python.exe -m unittest app.tests.test_productivity app.tests.test_productivity_integration app.tests.test_whatsapp -v
+.\.venv\Scripts\python.exe -m app.tests.test_flow
+.\.venv\Scripts\python.exe -m app.tests.test_commands
 ```
 
 Os testes verificam persistência, isolamento das contas, cancelamento, entrega única

@@ -2,11 +2,11 @@
 
 ## Executar a versão atualizada
 
-Esta distribuição contém o código-fonte, sem executável compilado. Na pasta do projeto, execute:
+Esta distribuição contém o código-fonte, sem executável compilado. Na pasta do projeto, use o ambiente `.venv` criado conforme a [instalação no README](README.md#instalação):
 
 ```powershell
-python -m pip install -r requirements.txt
-python run.py
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe run.py
 ```
 
 O código usa `sherpa-onnx`, mas esta versão fonte não inclui pesos, léxico nem tokens do detector contínuo. Na primeira utilização da ativação por voz, o aplicativo obtém os arquivos necessários do pacote oficial e confere seus hashes. O modelo de apoio Whisper `base` também é baixado quando ainda não está no computador. Aguarde essa preparação com uma conexão à internet. Depois de instalar e obter os modelos, a detecção de “Apolo” funciona localmente, sem chave de API. O reconhecimento do pedido continua usando o motor escolhido na aba Voz, que pode exigir internet.
@@ -35,7 +35,7 @@ Experimente “Apolo”, aguarde o sinal e faça seu pedido, ou diga “Apolo, a
 Os testes offline de pronúncia usam um léxico e uma lista de tokens mínimos criados em uma pasta temporária. Eles conferem os rótulos e as aproximações fonéticas de Apolo sem pesos de terceiros, rede ou microfone:
 
 ```powershell
-python -m unittest app.tests.test_apolo_name
+.\.venv\Scripts\python.exe -m unittest app.tests.test_apolo_name
 ```
 
 O teste de empacotamento separa as bibliotecas nativas do modelo acústico opcional. Sem pesos locais válidos, registra a verificação do modelo como `skipped`, com motivo, e não tenta baixá-los. Consulte [EXECUTAVEL_WINDOWS.md](EXECUTAVEL_WINDOWS.md) para compilar e verificar um pacote próprio.
